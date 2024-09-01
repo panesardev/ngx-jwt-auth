@@ -1,4 +1,4 @@
-export interface Response<T> {
+export interface HttpResponse<T> {
   message?: string;
   errored?: boolean;
   payload?: T;

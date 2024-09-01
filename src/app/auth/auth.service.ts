@@ -2,7 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { effect, inject, Injectable, signal } from "@angular/core";
 import { firstValueFrom } from "rxjs";
 import { API_URL } from "../app.constants";
-import { Response } from "../shared/interfaces/response.interface";
+import { HttpResponse } from "../shared/interfaces/http.interface";
 import { StorageService } from "../shared/services/storage.service";
 import { AuthState, CreateAccountRequestBody, LoginRequestBody, Token } from "./auth.interface";
 import { decode, initialState } from "./auth.utilities";
@@ -18,7 +18,7 @@ export class AuthService {
   
   async login(body: LoginRequestBody): Promise<void> {
     const response = await firstValueFrom(
-      this.http.post<Response<Token>>(`${API_URL}/auth/login`, body),
+      this.http.post<HttpResponse<Token>>(`${API_URL}/auth/login`, body),
     );
     
     if (response.errored) throw Error(response.message);
@@ -34,7 +34,7 @@ export class AuthService {
 
   async createAccount(body: CreateAccountRequestBody): Promise<void> {
     const response = await firstValueFrom(
-      this.http.post<Response<Token>>(`${API_URL}/auth/create-account`, body),
+      this.http.post<HttpResponse<Token>>(`${API_URL}/auth/create-account`, body),
     );
 
     if (response.errored) throw Error(response.message);
