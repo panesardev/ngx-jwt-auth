@@ -1,27 +1,31 @@
-# NgxJwtAuth
+# Angular JWT Authentication Starter Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+✅ Opinionated naming and architecture\
+✅ Enabled Angular server-side rendering\
+✅ Customizable Firebase AuthService\
+✅ Authentication with additional user data\
+✅ Extendable domain service for firestore collections\
+✅ Tailwindcss for styling\
+✅ Server compatible local storage service\
+✅ Customizable Modals with lazy loading\
+✅ Customizable TitleResolver for pages
 
-## Development server
+## Rename this project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+replace "ngx-starter" to "your-project-name" in these files:
+- angular.json
+- package.json
+- src/app/app.constants.ts
+- src/index.html
 
-## Code scaffolding
+## Change git origin
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure to set your own git repo origin after cloning this repo.
 
-## Build
+```bash
+$ git remote set-url origin "your-repo-url.git"
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## No testing frameworks
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Do not use this template in production as it does not have any support for testing.

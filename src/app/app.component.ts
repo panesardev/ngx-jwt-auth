@@ -1,17 +1,32 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './layout/footer/footer.component';
+import { RenderModalComponent } from './layout/modals/render-modal.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    NavbarComponent,
+    FooterComponent,
+    RenderModalComponent,
+  ],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-navbar class="select-none"/>
+    
+    <main>
+      <router-outlet/>
+    </main>
+    
+    <app-footer class="select-none"/>
 
-    <router-outlet />
+    @defer {
+      <app-render-modal/>
+    }
   `,
-  styles: [],
 })
 export class AppComponent {
-  title = 'ngx-jwt-auth';
+
 }

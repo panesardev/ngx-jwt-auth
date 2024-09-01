@@ -1,12 +1,21 @@
 {
   "name": "ngx-jwt-auth",
-  "version": "0.0.0",
+  "description": "Angular JWT authentication application",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sukhpreet Singh",
+    "email": "panesar.pb08@gmail.com",
+    "url": "https://panesar.dev"
+  },
+  "keywords": [
+    "angular",
+    "jwt",
+    "tailwind"
+  ],
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "serve:ssr:ngx-jwt-auth": "node dist/ngx-jwt-auth/server/server.mjs"
+    "start": "node dist/ngx-jwt-auth/server/server.mjs",
+    "dev": "ng serve",
+    "build": "ng build"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +29,9 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.1",
+    "compression": "^1.7.4",
     "express": "^4.18.2",
+    "jose": "^5.8.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -29,8 +40,12 @@
     "@angular-devkit/build-angular": "^18.2.1",
     "@angular/cli": "^18.2.1",
     "@angular/compiler-cli": "^18.2.0",
+    "@types/compression": "^1.7.5",
     "@types/express": "^4.17.17",
     "@types/node": "^18.18.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.42",
+    "tailwindcss": "^3.4.10",
     "typescript": "~5.5.2"
   }
 }
