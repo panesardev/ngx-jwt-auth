@@ -1,6 +1,6 @@
 # Angular JWT Authentication Starter Template
 
-✅ Opinionated naming and architecture\
+✅ Opinionated naming and structure\
 ✅ Enabled Angular server-side rendering\
 ✅ Pre-configured JWT authentication\
 ✅ Extendable generic domain service\
