@@ -2,17 +2,18 @@
 
 ✅ Opinionated naming and architecture\
 ✅ Enabled Angular server-side rendering\
-✅ Customizable Firebase AuthService\
-✅ Authentication with additional user data\
-✅ Extendable domain service for firestore collections\
+✅ Pre-configured JWT authentication\
+✅ Extendable generic domain service\
 ✅ Tailwindcss for styling\
 ✅ Server compatible local storage service\
 ✅ Customizable Modals with lazy loading\
 ✅ Customizable TitleResolver for pages
 
+See [api-starter](https://github.com/panesardev/api-starter) template for backend jwt auth api.
+
 ## Rename this project
 
-replace "ngx-starter" to "your-project-name" in these files:
+replace "ngx-jwt-auth" to "your-project-name" in these files:
 - angular.json
 - package.json
 - src/app/app.constants.ts
