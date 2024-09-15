@@ -4,7 +4,8 @@ import { User } from '../domains/users/user.interface';
 export interface AuthState {
   token: string;
   isAuthenticated: boolean;
-  userId: User['id'];
+  user: User;
+  isLoading: boolean;
 }
 
 export interface LoginRequestBody {

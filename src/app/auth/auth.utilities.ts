@@ -5,7 +5,8 @@ export function initialState(): AuthState {
   return {
     token: null,
     isAuthenticated: false,
-    userId: null,
+    user: null,
+    isLoading: false,
   };  
 }
 

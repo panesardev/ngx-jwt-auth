@@ -4,8 +4,8 @@
 ✅ Enabled Angular server-side rendering\
 ✅ Pre-configured JWT authentication\
 ✅ Extendable generic domain service\
-✅ Tailwindcss for styling\
 ✅ Server compatible local storage service\
+✅ Tailwindcss for styling\
 ✅ Customizable Modals with lazy loading\
 ✅ Customizable TitleResolver for pages
 
